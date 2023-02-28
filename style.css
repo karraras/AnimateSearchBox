@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  height: 100vh;
+  width: 100%;
+  background: #673ab7;
+  display: grid;
+  place-items: center;
+}
+.parent {
+  width: 400px;
+  height: 100px;
+
+  position: relative;
+}
+.input {
+  position: relative;
+  margin-top: 10px;
+  width: 360px;
+  transition: 1s all;
+}
+.input.cloz {
+  position: relative;
+  transform: translateX(200px);
+  margin-top: 10px;
+  width: 40px;
+}
+
+.input.cloz .search {
+  cursor: pointer;
+  position: absolute;
+  top: -5px;
+  color: #673ab7;
+  background: white;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  right: -5px;
+  font-size: 20px;
+}
+.parent .close {
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(45deg);
+  border-radius: 50%;
+  position: absolute;
+  right: 0px;
+  font-size: 30px;
+  top: 15px;
+  opacity: 1;
+  transition: 1s all;
+}
+.parent .close.shrink {
+  opacity: 0;
+}
+
+.input input {
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  height: 40px;
+  width: 100%;
+  padding: 0px 0px 0px 10px;
+  position: absolute;
+}
+.input .search {
+  position: absolute;
+  top: 5px;
+  color: white;
+  background: #673ab7;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  right: 5px;
+  transition: 0.5s all;
+  cursor: pointer;
+  font-size: 15px;
+}
+.result {
+  height: 30px;
+  padding: 0px 0px 0px 20px;
+  position: absolute;
+  text-align: center;
+  color: white;
+  left: 50%;
+  top: 60%;
+  transform: translateX(-50%);
+}
